@@ -11,8 +11,11 @@ install.packages('testthat')
 
 install.packages("argparser")
 
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("Rsamtools")
+
 devtools::install_bitbucket("chicagoTeam/Chicago", subdir="Chicago")
 devtools::install_github("RegulatoryGenomicsGroup/chicdiff", subdir="Chicdiff")
 
-source("http://www.bioconductor.org/biocLite.R")
-biocLite(c("Rsamtools")
