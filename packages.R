@@ -8,3 +8,9 @@ install.packages("reshape2")
 install.packages("data.table")
 install.packages("jsonlite")
 install.packages('testthat')
+
+install.packages("argparser")
+
+devtools::install_bitbucket("chicagoTeam/Chicago", subdir="Chicago")
+devtools::install_github("RegulatoryGenomicsGroup/chicdiff", subdir="Chicdiff")
+
