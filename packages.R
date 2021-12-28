@@ -11,6 +11,8 @@ install.packages('testthat')
 
 install.packages("argparser")
 
+install.packages('tidyverse')
+
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
